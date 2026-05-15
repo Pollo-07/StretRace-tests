@@ -4,5 +4,10 @@ module.exports = {
   roots: ['<rootDir>/specs'],
   testMatch: ['**/*.spec.ts'],
   collectCoverageFrom: ['specs/**/*.ts'],
-  moduleFileExtensions: ['ts', 'js', 'json']
+  moduleFileExtensions: ['ts', 'js', 'json'],
+
+
+    moduleNameMapper: {
+    "^jsonwebtoken$": "<rootDir>/node_modules/jsonwebtoken"
+  }
 };
